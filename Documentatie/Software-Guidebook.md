@@ -403,6 +403,8 @@ Dit hoofdstuk is niet van toepassing op deze applicatie. De applicatie draait lo
 ## 8. Deployment
 Dit hoofdstuk is niet van toepassing op deze applicatie. Omdat deze applicatie lokaal ontwikkeld is en gedeployd wordt, is er geen deployment diagram of informatie beschikbaar. (Voor school: dit is overlegd en goedgekeurd door onze begeleiders.)
 
+Zie onderstaand hoofdstuk voor de installatie van de applicatie.
+
 ## 9. Operation and Support
 Dit hoofdstuk bevat een stappenplan voor het opzetten, het installeren en het opstarten van de Apprend-applicatie. Aan het einde van dit hoofdstuk staat ook een korte uitleg over het uitvoeren van de automatische testen die zijn opgesteld en bekende bugs en problemen in de applicatie.
 
