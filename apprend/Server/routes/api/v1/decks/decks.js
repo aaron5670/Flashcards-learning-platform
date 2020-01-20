@@ -52,7 +52,7 @@ decks.get('/tags', async (req, res) => {
 });
 
 /*====================================
-| SEARCH FOR SOME DECKS
+| SEARCH FOR SOME DECKS & USERS
 */
 decks.get('/', async (req, res) => {
     const searchQuery = req.query.deck;
@@ -88,13 +88,7 @@ decks.get('/', async (req, res) => {
                             "deck.flashcards": "$decks.flashcards",
                         }
                     }
-                ],
-                // TAGS TEMPORARY DISABLED
-                // foundTags: [
-                //     {$unwind: "$decks"},
-                //     {$match: {'decks.tags': {'$regex': searchQuery, '$options': 'i'}, "decks.private": false}},
-                //     {$project: {"tags": "$decks.tags", "type": "tag"}}
-                // ],
+                ]
             }
         }
     ]);
@@ -107,15 +101,10 @@ decks.get('/', async (req, res) => {
         {
             title: 'Decks',
             results: []
-        },
-        // TAGS TEMPORARY DISABLED
-        // {
-        //     title: 'Tags',
-        //     results: []
-        // }
+        }
     ];
 
-    for (var key in searchResult[0]) {
+    for (let key in searchResult[0]) {
         if (searchResult[0].hasOwnProperty(key)) {
             searchResult[0][key].forEach(result => {
                 if (result.type === 'user' && result.email) finalResults[0].results.push({
@@ -128,11 +117,6 @@ decks.get('/', async (req, res) => {
                     ...result.deck,
                     type: result.type
                 });
-                // TAGS TEMPORARY DISABLED
-                // if (result.type === 'tag') finalResults[2].results.push({
-                //     name: result.tags,
-                //     type: result.type
-                // });
             })
         }
     }
@@ -147,7 +131,7 @@ decks.get('/', async (req, res) => {
     finalResults[1].results.sort((a, b) => parseFloat(b.flashcards) - parseFloat(a.flashcards));
 
     // Filter results for AutoSuggest
-    if (autoSuggest == 'true') {
+    if (autoSuggest === 'true') {
         if (finalResults[0].results.length > 3) finalResults[0].results.splice(3, finalResults[0].results.length - 3);
         if (finalResults[1].results.length > 3) finalResults[1].results.splice(3, finalResults[1].results.length - 3);
     }

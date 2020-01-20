@@ -36,13 +36,6 @@ const SearchInput = (props) => {
                     </span>
             </Link>
         );
-        // if (suggestion.type === "tag") return (
-        //     <Link to={`/tags/${suggestion.name}`} className={'search-suggestions-link w-100'}>
-        //             <span>
-        //                 {suggestion.name}
-        //             </span>
-        //     </Link>
-        // );
     }
 
     function renderSectionTitle(section) {
