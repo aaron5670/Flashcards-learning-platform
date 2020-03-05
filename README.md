@@ -1,5 +1,5 @@
-# [sep2019-project-kiwi](https://en.wikipedia.org/wiki/Kiwi)
-
+# Dutch learning platform with flashcards
+A school project builded with React & Node.js.
 
 ### Leden
 
