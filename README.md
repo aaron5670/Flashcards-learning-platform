@@ -1,6 +1,7 @@
 # Dutch learning platform with flashcards
 A school project builded with React & Node.js.
 
+## 🇳🇱 Everything from here is in Dutch
 ### Leden
 
 - Aaron van den Berg
@@ -100,12 +101,12 @@ Om de seed file te runnen moet je het script **apprend\Server\seed.js** uitvoere
 
 Na het uitvoeren van dit script moet de database er ongeveer uitzien als onderstaande figuur.
 
-![Screenshot database seed file](https://github.com/HANICA-DWA/sep2019-project-kiwi/blob/development/Documentatie/Screenshot%20database.svg)
+![Screenshot database seed file](https://github.com/aaron5670/Flashcards-learning-platform/blob/development/Documentatie/Screenshot%20database.svg)
 
 ### Eindresultaat
 Als alles is uitgevoerd hoort de applicatie er als onderstaande figuur uit te zien. Let op dat de teksten kunnen verschillen op basis van de gegevens in de database!
 
-![Screenshot client eindresultaat](https://github.com/HANICA-DWA/sep2019-project-kiwi/blob/development/Documentatie/Screenshot%20client.svg)
+![Screenshot client eindresultaat](https://github.com/aaron5670/Flashcards-learning-platform/blob/development/Documentatie/Screenshot%20client.svg)
 
 
 ### Eventueel uitvoeren automatische tests
