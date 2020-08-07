@@ -1,5 +1,5 @@
 # Dutch learning platform with flashcards
-A school project builded with React & Node.js.
+A school project build with React & Node.js.
 
 ## 🇳🇱 Everything from here is in Dutch
 ### Leden
