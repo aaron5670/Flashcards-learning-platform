@@ -14,7 +14,7 @@
     "jest": "^24.9.0",
     "loaders.css": "^0.1.2",
     "mongoose": "^5.7.12",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "puppeteer": "^2.0.0",
     "react": "^16.12.0",
     "react-autosuggest": "^9.4.3",
